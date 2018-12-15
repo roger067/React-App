@@ -37,7 +37,7 @@ body {
  /*** Scroll Tabela **/
 .scroll-table{
     overflow-y: scroll;
-    max-height: 550px;
+    max-height: 60%;
     border-radius: 3px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     margin-top:50px;
