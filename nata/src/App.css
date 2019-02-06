@@ -58,7 +58,7 @@ body {
   /* Handle */
   .scroll-table::-webkit-scrollbar-thumb {
     background-color: #121c25;
-    border-radius: 3px;
+    border-radius: 0px;
   }
 
  /*** Tabela **/
@@ -148,18 +148,6 @@ body {
  
  td:last-child {
    border-right: 0px;
- }
- 
- .text-left {
-   text-align: left;
- }
- 
- .text-center {
-   text-align: center;
- }
- 
- .text-right {
-   text-align: right;
  }
 
  /*footer*/

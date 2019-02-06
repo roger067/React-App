@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function CoinTable(props) {
+const Table = (props) => {
   return (
     <div className="scroll-table">
       <table className="table-fill">
@@ -32,3 +32,5 @@ export default function CoinTable(props) {
     </div>
   )
 }
+
+export default Table
