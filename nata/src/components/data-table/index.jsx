@@ -6,7 +6,7 @@ const Table = (props) => {
       <table className="table-fill">
         <thead>
           <tr>
-            <th className="text-left">Nome</th>
+            <th className="text-left"><button onClick={()=> props.onSort('name')} className="btn btn-info">Nome</button></th>
             <th className="text-left">Endereço</th>
             <th className="text-left">Cidade</th>
             <th className="text-left">Região</th>
@@ -17,7 +17,7 @@ const Table = (props) => {
         <tbody className="table-hover">
           {
             props.data.map(row => (
-              <tr>
+              <tr key={row.name}>
                 <td>{row.name}</td>
                 <td>{row.address}</td>
                 <td>{row.city}</td>

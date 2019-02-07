@@ -11,16 +11,24 @@ class App extends React.Component {
     this.state = {
       data: data,
     }
+
+    this.onSort = this.onSort.bind(this)
+  }
+
+  onSort(key){
+    this.setState({
+      data: data.sort( (a,b) => a < b )
+    })
   }
 
   render() {
     return (
       <div>
         <Navbar />
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-              <Table data={this.state.data} />
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-10 col-sm-offset-1">
+              <Table data={this.state.data} onSort={this.onSort}/>
             </div>
           </div>
         </div>
