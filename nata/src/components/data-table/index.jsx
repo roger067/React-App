@@ -6,12 +6,12 @@ const Table = (props) => {
       <table className="table-fill">
         <thead>
           <tr>
-            <th className="text-left"><button onClick={()=> props.onSort('name')} className="btn btn-info">Nome</button></th>
-            <th className="text-left">Endereço</th>
-            <th className="text-left">Cidade</th>
-            <th className="text-left">Região</th>
-            <th className="text-left">País</th>
-            <th className="text-left">Aniversário</th>
+            <th onClick={()=> props.onSort('name')} className="text-left">Nome</th>
+            <th onClick={()=> props.onSort('address')} className="text-left">Endereço</th>
+            <th onClick={()=> props.onSort('city')} className="text-left">Cidade</th>
+            <th onClick={()=> props.onSort('region')} className="text-left">Região</th>
+            <th onClick={()=> props.onSort('country')} className="text-left">País</th>
+            <th onClick={()=> props.onSort('birthday')} className="text-left">Aniversário</th>
           </tr>
         </thead>
         <tbody className="table-hover">
